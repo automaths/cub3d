@@ -1,0 +1,13 @@
+NO ./textures/akatsuki.xpm
+SO ./textures/gaara.xpm
+EA ./textures/uchiwa.xpm
+WE ./textures/uzumaki.xpm
+F 225 , 100  , 0
+C 220  ,100  , 999
+
+1111111111111111
+1010000000000001
+1010000100000111
+10100000N0010001
+1000000000010001
+1111111111111111
