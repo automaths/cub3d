@@ -6,7 +6,7 @@
 /*   By: nsartral <nsartral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 12:48:46 by nsartral          #+#    #+#             */
-/*   Updated: 2022/11/21 17:38:02 by nsartral         ###   ########.fr       */
+/*   Updated: 2022/11/21 18:08:15 by nsartral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,33 +58,33 @@ typedef struct s_texture
 
 typedef struct s_ray
 {
-	double			posx; 
-	double			posy; 
-	double			dirx; 
-	double			diry; 
-	double			planx; 
-	double			plany; 
-	double			raydirx; 
-	double			raydiry; 
-	double			camerax; 
-	int				mapx; 
-	int				mapy; 
-	double			sidedistx; 
-	double			sidedisty; 
-	double			deltadistx; 
-	double			deltadisty; 
-	int				stepx; 
-	int				stepy; 
-	int				hit; 
-	int				side; 
-	double			perpwalldist; 
-	int				lineheight; 
-	int				drawstart; 
-	int				drawend; 
-	double			movespeed; 
-	double			rotspeed; 
-	int				x; 
-	int				texture; 
+	double			posx;
+	double			posy;
+	double			dirx;
+	double			diry;
+	double			planx;
+	double			plany;
+	double			raydirx;
+	double			raydiry;
+	double			camerax;
+	int				mapx;
+	int				mapy;
+	double			sidedistx;
+	double			sidedisty;
+	double			deltadistx;
+	double			deltadisty;
+	int				stepx;
+	int				stepy;
+	int				hit;
+	int				side;
+	double			perpwalldist;
+	int				lineheight;
+	int				drawstart;
+	int				drawend;
+	double			movespeed;
+	double			rotspeed;
+	int				x;
+	int				texture;
 }					t_ray;
 
 typedef struct s_data
@@ -117,7 +117,7 @@ typedef struct s_game
 	char			*so;
 	char			*we;
 	char			*ea;
-	char 			*spr;
+	char			*spr;
 	int				ground_color;
 	int				sky_color;
 	int				rgb[3];
@@ -152,8 +152,8 @@ void		check_special_case(t_game *zz);
 void		launch_game(t_game *zz);
 void		init(char **argv, t_game *zz);
 void		free_textures(t_game *zz);
-void    	free_all_one(t_game *zz);
-void    	free_all_two(t_game *zz);
+void		free_all_one(t_game *zz);
+void		free_all_two(t_game *zz);
 void		good_exit(t_game *zz, char *str);
 void		oops_crash(t_game *zz, char *msg);
 void		clean_error_exit(t_game *zz, char *line, int fd, char *error_msg);
@@ -168,7 +168,6 @@ size_t		get_max_len(char **tab);
 void		free_tab(char **tab);
 void		print_tab(char **tab);
 int			convert_rgb(int t, int r, int g, int b);
-
 
 // ========================================================================= //
 //                                Executing                                  //

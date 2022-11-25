@@ -6,7 +6,7 @@
 /*   By: nsartral <nsartral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 15:49:29 by nsartral          #+#    #+#             */
-/*   Updated: 2022/11/21 15:49:31 by nsartral         ###   ########.fr       */
+/*   Updated: 2022/11/21 18:34:00 by nsartral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ int	keying(int keycode, t_game *zz)
 	else if (keycode == ROTATE_RIGHT)
 		zz->data.rotate_right = 1;
 	else if (keycode == 65307)
-		exiting("you have exited the game, hope you enjoyed it!\n", zz);
+		exiting("Hope you have enjoyed the game!", zz);
 	else if (keycode == 32)
 		zz->ray.movespeed = 0.25;
 	else if (keycode == 48)

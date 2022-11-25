@@ -6,7 +6,7 @@
 /*   By: nsartral <nsartral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 15:46:48 by nsartral          #+#    #+#             */
-/*   Updated: 2022/11/21 17:42:52 by nsartral         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:16:31 by nsartral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void	launch_game(t_game *zz)
 	init_mlx(zz);
 	mlx_hook(zz->data.mlx_win, 2, 1L << 0, keying, zz);
 	mlx_hook(zz->data.mlx_win, 3, 1L << 1, releasing, zz);
-	mlx_hook(zz->data.mlx_win, 17, 1L << 17, cross_exit, zz->data.mlx_ptr);
+	mlx_hook(zz->data.mlx_win, 17, 1L << 17, mlx_loop_end, zz->data.mlx_ptr);
 	mlx_loop_hook(zz->data.mlx_ptr, raycasting, zz);
 	mlx_loop(zz->data.mlx_ptr);
 }

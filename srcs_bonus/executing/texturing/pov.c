@@ -6,7 +6,7 @@
 /*   By: nsartral <nsartral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 15:48:32 by nsartral          #+#    #+#             */
-/*   Updated: 2022/11/21 17:44:13 by nsartral         ###   ########.fr       */
+/*   Updated: 2022/11/21 17:52:36 by nsartral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,16 +24,16 @@ int	check_invisibility(t_game *zz)
 void	check_destroy_box(t_game *zz)
 {
 	if (zz->map[(int)(zz->ray.posx)][(int)(zz->ray.posy
-		+ (zz->ray.diry * 0.2))] == '5')
+		+ (zz->ray.diry * 0.3))] == '5')
 	{
 		zz->map[(int)(zz->ray.posx)][(int)(zz->ray.posy
-				+ (zz->ray.diry * 0.2))] = '0';
+				+ (zz->ray.diry * 0.3))] = '0';
 	}
 	if (zz->map[(int)(zz->ray.posx + (zz->ray.dirx
-				* 0.2))][(int)zz->ray.posy] == '5')
+				* 0.3))][(int)zz->ray.posy] == '5')
 	{
 		zz->map[(int)(zz->ray.posx + (zz->ray.dirx
-					* 0.2))][(int)zz->ray.posy] = '0';
+					* 0.3))][(int)zz->ray.posy] = '0';
 	}
 }
 
